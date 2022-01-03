@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Starenco_Lab17_Ex2</title>
+    <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+    <div class="one"><h1>Конвертер валют</h1></div>
+    <div class="flex-container">
+      <div>
+        <form>
+          <select style="width: 120px; height: 33px;" onchange='findOption(this)'>
+          <option disabled selected value="select">Select currency</option>
+          <option>USD</option>
+          <option>MD</option>
+          <option>EU</option>
+          </select>
+          <input type="number" id="amount" placeholder="Enter number">
+          <button type="button" id="CalculateButton" style="width: 120px; height: 33px;" class="buttin button1">Перевести</button>
+          </form>
+      </div>
+      <table>
+        <tr>
+            <td>
+              <div style="display: inline;">
+                <img style="height: 50px; width: 50px;" src="Images/eu.png" alt="" />
+                <span>Euro</span>
+              </div>
+            </td>
+            <td>
+              <div style="display: inline;">
+                <span id="eu">0</span>
+              </div>
+            </td>
+        </tr>
+        <tr>
+            <td>
+              <div style="display: inline;">
+                <img style="height: 50px; width: 50px;" src="Images/md.png" alt="" />
+                <span>Lei</span>
+              </div>
+            </td>
+            <td>
+              <div style="display: inline;">
+                <span id="md">0</span>
+              </div>
+            </td>
+        </tr>
+        <tr>
+            <td>
+              <div style="display: inline;">
+                <img style="height: 50px; width: 50px;" src="Images/usd.png" alt="" />
+                <span>Dollar</span>
+              </div>
+            </td>
+            <td>
+              <div style="display: inline;">
+                <span id="usd">0</span>
+              </div>
+            </td>
+        </tr>
+    </table>  
+    </div>
+</body>
+<script src="ScriptJS3.js"></script>
+</html>

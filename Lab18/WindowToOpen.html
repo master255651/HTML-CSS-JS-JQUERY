@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Первое задание (формы)</title>
+	<script src="https://kit.fontawesome.com/c4aa7d1302.js" crossorigin="anonymous"></script>
+	<link rel="shortcut icon" href="https://drive.google.com/uc?export=view&id=1A1jWf31JjX6S1moAlsbi13qe7Cu-Qs0t" type="image/x-icon">
+	<link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+	<div class="one"><h1>User OutPut Form</h1></div>
+	<div class="container">
+  <form>
+
+  <fieldset class="col-75">
+  <legend>Personal Particular</legend>
+  <div class="row">
+    <div class="col-20">
+    	<i class="fas fa-globe-africa"></i>
+      <label for="name">Name</label> 
+    </div>
+    <div class="col-40">
+      <label type="text" id="name" name="name"></label>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col-20">
+    	<i class="far fa-address-card"></i>
+      <label for="password">Password</label>
+    </div>
+    <div class="col-40">
+      <label type="text" id="password" name="password"></label>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col-20">
+    	<i class="far fa-hospital"></i>
+      <label for="age">Age</label>
+    </div>
+    <div class="col-40">
+      <label type="text" id="age" name="age"></label>
+    </div>
+  </div>
+
+
+  <div class="row">
+    <div class="col-20">
+		<i class="far fa-hospital"></i>
+      <label for="radio_num">Gender</label>
+    </div>
+	<div class="col-40">
+		<label type="text" id="Gender" name="Gender"></label>
+	</div>
+  </div>
+  </fieldset>
+
+  <br>
+  <fieldset class="col-75">
+  	<legend>Languages</legend>
+  	<div class="row">
+    <div class="col-20">
+		<label>Programming languages</label>
+    </div>
+    <div class="col-40">
+      <label type="languages" id="languages" name="Gender"></label>
+    </div>
+  </div>
+  </fieldset>
+  <br>
+
+  <fieldset class="col-75">
+	<legend>Instruction</legend>
+<div class="row">
+  <div class="col-20">
+	<label for="instruction">Instruction</label>
+  </div>
+  <div class="col-40">
+	<textarea id="instruction" name="instruction" style="height:150px"></textarea>
+  </div>
+</div>
+</fieldset>
+
+  <div class="row">
+    <input type="submit" id="send" value="Добавить">
+    <input type="reset" value="Очистить">
+	</div>
+
+  </form>
+</div>
+</body>
+<script src="ScriptJS2.js"></script>
+</html>

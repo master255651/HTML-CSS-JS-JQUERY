@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Первое задание (формы)</title>
+	<script src="https://kit.fontawesome.com/c4aa7d1302.js" crossorigin="anonymous"></script>
+	<link rel="shortcut icon" href="https://drive.google.com/uc?export=view&id=1A1jWf31JjX6S1moAlsbi13qe7Cu-Qs0t" type="image/x-icon">
+	<link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+	<div class="one"><h1>User Input Form</h1></div>
+	<div class="container">
+  <form action="WindowToOpen.html">
+
+  <fieldset class="col-75">
+  <legend>Personal Particular</legend>
+  <div class="row">
+    <div class="col-20">
+    	<i class="fas fa-globe-africa"></i>
+      <label for="name">Name</label> 
+    </div>
+    <div class="col-40">
+      <input type="text" id="name" name="name" placeholder="Введите имя..." required>
+    </div>
+	<div class="col-40">
+        <i></i>
+      <label class="errorMessage">Ошибка: Имя должно содержать только буквы и не должно быть пустым</label> 
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col-20">
+    	<i class="far fa-address-card"></i>
+      <label for="password">Password</label>
+    </div>
+    <div class="col-40">
+      <input type="password" id="password" name="password" required>
+    </div>
+	<div class="col-40">
+        <i></i>
+      <label class="errorMessage">Ошибка: Пароль должен содержать не менее 6 символов</label> 
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col-20">
+    	<i class="far fa-hospital"></i>
+      <label for="age">Age</label>
+    </div>
+    <div class="col-40">
+      <select id="age" name="age">
+        <option> &#60; 1 year old </option>
+        <option> between 1 and 14 </option>
+        <option> from 14 to 18 </option>
+        <option> over 18 </option>
+      </select>
+    </div>
+  </div>
+
+
+  <div class="row">
+    <div class="col-20">
+		<i class="far fa-hospital"></i>
+      <label for="radio_num">Gender</label>
+    </div>
+	<div class="col-40">
+		<input type="radio" class="Gender" value="Male" name="radio_num" style="margin-top: 10px;">Male
+		<input type="radio" class="Gender" value="Female" name="radio_num">Female
+	</div>
+	<div class="col-40">
+        <i></i>
+      <label class="errorMessage">Ошибка: Выберите ваш пол</label> 
+    </div>
+  </div>
+  </fieldset>
+
+  <br>
+  <fieldset class="col-75">
+  	<legend>Languages</legend>
+  	<div class="row">
+    <div class="col-20">
+		<label>Programming languages</label>
+    </div>
+    <div class="col-40">
+      <input type="checkbox" id="lang1" name="lang1" value="Java" class="languages">
+	  <label for="lang1"> Java</label>
+	  <input type="checkbox" id="lang2" name="lang2" value="C/C++" class="languages">
+	  <label for="lang2"> C/C++</label>
+	  <input type="checkbox" id="lang3" name="lang3" value="C#" class="languages">
+	  <label for="lang3"> C#</label>
+    </div>
+	<div class="col-40">
+        <i></i>
+      <label class="errorMessage">Ошибка: Выберите как минимум 1 язык</label> 
+    </div>
+  </div>
+  </fieldset>
+  <br>
+
+  <fieldset class="col-75">
+	<legend>Instruction</legend>
+<div class="row">
+  <div class="col-20">
+	<label for="instruction">Instruction</label>
+  </div>
+  <div class="col-40">
+	<textarea id="instruction" name="instruction" placeholder="Enter your instruction here..." style="height:150px" required></textarea>
+  </div>
+  <div class="col-40">
+	<i></i>
+  <label class="errorMessage">Ошибка: Поле не может быть пустым</label> 
+</div>
+</div>
+</fieldset>
+
+  <div class="row">
+    <input type="submit" id="send" value="Добавить">
+    <input type="reset" value="Очистить">
+	</div>
+
+  </form>
+</div>
+</body>
+<script src="ScriptJS.js"></script>
+</html>

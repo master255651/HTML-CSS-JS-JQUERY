@@ -1,0 +1,66 @@
+<html>
+<head>
+  <title>Starenco_Lab09</title>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+</head>
+<style>
+BODY {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #000;
+  font-family: Georgia;
+  }
+div {
+  display: inline-block;
+  font-size: 50px;
+  font-weight: normal;
+  cursor: pointer;
+  text-shadow: 0 0 0 crimson;
+  color: transparent;
+  }
+
+.button {
+  display: inline-block;
+  padding: 15px 25px;
+  font-size: 24px;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+  outline: none;
+  color: indianred;
+  background-color: darkred;
+  border: none;
+  border-radius: 15px;
+  box-shadow: 0 9px #999;
+  border-radius: 50%;
+}
+
+.button:hover {background-color: orangered;}
+
+.button:active {
+  background-color: red;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
+
+@keyframes shadows {
+  60% {
+    text-shadow: 0 0 0 crimson;
+  }
+  90% {
+    text-shadow: 0 30px 40px transparent;
+  }
+  100% {
+      text-shadow: 0 0 0 transparent;
+  }
+}
+</style>
+<body>
+    <div id="clock" onclick="ChangeContent()">
+        <h1 class="min">00</h1>:<h1 class="sec">30</h1>
+    </div>
+    <button class="button" onclick="ClockStart()">Start</button>
+</body>
+<script src="ScriptJS.js"></script>
+</html>

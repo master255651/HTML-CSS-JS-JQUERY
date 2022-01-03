@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Starenco_Lab16</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="https://kit.fontawesome.com/c4aa7d1302.js" crossorigin="anonymous"></script>
+    <link rel="shortcut icon" href="https://drive.google.com/uc?export=view&id=1A1jWf31JjX6S1moAlsbi13qe7Cu-Qs0t" type="image/x-icon">
+</head>
+<body>
+    <div class="one"><h1>Первый и второй номер</h1></div>
+    <div class="container">
+  <form>
+
+    <div class="Box">
+        <label for="sum">Сумма: </label>
+        <input type="number" id="sum">
+
+    
+        <input type="checkbox" id="book_1" class="checkSum" value="50">
+        <label for="book_1" style="margin: 15px;">Книга 1 - 50 лей</label>
+
+
+        <input type="checkbox" id="book_2" class="checkSum" value="60">
+        <label for="book_2" style="margin: 15px;">Книга 2 - 60 лей</label>
+
+        <input type="checkbox" id="book_3" class="checkSum" value="30.5">
+        <label for="book_3" style="margin: 15px;">Книга 3 - 30.5 лей</label>
+
+    </div>
+
+  <fieldset class="col-75">
+  <legend>Регистрация</legend>
+  <div class="row">
+    <div class="col-20">
+        <i class="fas fa-globe-africa"></i>
+      <label for="name">Имя</label> 
+    </div>
+    <div class="col-40">
+      <input type="text" id="name" name="name" placeholder="Введите имя..." required>
+    </div>
+    <div class="col-40">
+        <i></i>
+      <label class="errorMessage">Ошибка: Введите имя</label> 
+    </div>
+  </div>
+
+   <div class="row">
+    <div class="col-20">
+        <i class="fas fa-globe-africa"></i>
+      <label for="email">Электронный адресс</label> 
+    </div>
+    <div class="col-40">
+      <input type="text" id="email" name="email" placeholder="Введите email..." required pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$">
+    </div>
+     <div class="col-40">
+        <i></i>
+      <label class="errorMessage">Ошибка: Вы ввели некорректный e-mail</label> 
+    </div>
+  </div>
+
+   <div class="row">
+    <div class="col-20">
+        <i class="fas fa-globe-africa"></i>
+      <label for="password1">Пароль</label> 
+    </div>
+    <div class="col-40">
+      <input type="password" id="password1" name="password1" placeholder="Введите пароль..." required minlength="4" maxlength="8">
+    </div>
+    <div class="col-40">
+        <i></i>
+      <label class="errorMessage">Ошибка: Пароль должен содержать от 4 до 8 символов</label> 
+    </div>
+  </div>
+
+   <div class="row">
+    <div class="col-20">
+        <i class="fas fa-globe-africa"></i>
+      <label for="password2">Подтвердите пароль</label> 
+    </div>
+    <div class="col-40">
+      <input type="password" id="password2" name="password2" placeholder="Подтвердите пароль..." required>
+    </div>
+    <div class="col-40">
+        <i></i>
+      <label class="errorMessage">Ошибка: Пароли не совпадают</label> 
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col-20">
+        <i class="fas fa-globe-africa"></i>
+      <label for="password2">Хобби</label> 
+    </div>
+    <div class="col-40">
+      <input type="checkbox" class="hobby">
+      <label for="vehicle1"> Плаванье</label>
+      <input type="checkbox" class="hobby">
+      <label for="vehicle2"> Чтение</label>
+      <input type="checkbox" class="hobby">
+      <label for="vehicle3"> Ничего неделанье</label>
+    </div>
+     <div class="col-40">
+        <i></i>
+      <label class="errorMessage">Ошибка: Выберите как минимум 1 вариант</label> 
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col-20">
+        <i class="fas fa-globe-africa"></i>
+      <label for="dateBirth">Дата рождения</label> 
+    </div>
+    <div class="col-40">
+      <input type="date" id="dateBirth" name="dateBirth" max="2021-11-01" min="1930-01-01" required>
+    </div>
+    <div class="col-40">
+        <i></i>
+      <label class="errorMessage">Ошибка: Выберите дату рождения в формате 01.01.2000</label> 
+    </div>
+  </div>
+
+
+  <div class="row">
+    <div class="col-20">
+      <label for="country">Страна рождения:</label>
+    </div>
+    <div class="col-40">
+      <select id="country" name="country">
+        <option value="default" disabled selected>Выберите страну...</option>
+        <option value="moldova">Молдова</option>
+        <option value="russia">Россия</option>
+        <option value="ukraine">Украина</option>
+      </select>
+    </div>
+    <div class="col-40">
+        <i></i>
+      <label class="errorMessage">Ошибка: Выберите страну</label> 
+    </div>
+  </div>
+
+   <div class="row">
+    <div class="col-20">
+      <label for="comments">Комментарии</label>
+    </div>
+    <div class="col-40">
+      <textarea id="comments" name="comments" placeholder="Введите дополнительную информацию..." style="height:150px"></textarea>
+    </div>
+  </div>
+
+    <div class="row">
+    <div class="col-20">
+      <label for="radio_num">Вы хотите получать нашу рассылку?</label>
+    </div>
+    <div class="col-40">
+      <input type="radio" class="mailing" name="radio_num" style="margin-top: 10px;">Да
+      <input type="radio" class="mailing" name="radio_num">Конечно
+      <input type="radio" class="mailing" name="radio_num">С удовольствие
+    </div>
+    <div class="col-40">
+        <i></i>
+      <label class="errorMessage">Ошибка: Выберите один вариант</label> 
+    </div>
+  </div>
+  </fieldset>
+
+  <div class="row">
+    <input type="submit" id="send" value="Отправить">
+    <input type="reset" value="Очистить">
+    </div>
+
+  </form>
+</div>
+</body>
+<script src="ScriptJS.js"></script>
+</html>

@@ -1,0 +1,175 @@
+        .one {
+          background-image: linear-gradient(to right, #f7a1a1 , #f7e9a1);
+          padding: 10px 20px;
+          text-align: center;
+          
+        }
+        .one h1 {
+          font-family: 'Righteous', cursive;
+          position: relative;
+          color: #9c3725; 
+          display: inline-block;
+          border-top: 2px solid;
+          border-bottom: 2px solid;
+          font-size: 3em;
+          padding: 11px 60px;
+          margin: 0; 
+          line-height: 1;
+        }
+        .one h1:before, .one h1:after {
+          content: ""; 
+          position: absolute;
+          top: 0;
+          width: 30px;
+          height: 100%;
+          border-left: 2px solid;
+          border-right: 2px solid;
+          background: repeating-linear-gradient(180deg, transparent, transparent 2px, #9c3725 2px, #9c3725 4px);
+        }
+        .one h1:before {left: 0;}
+        .one h1:after {right: 0;}
+        @media (max-width: 420px) {
+          .one h1 {font-size: 2em;}
+        }
+
+        body {
+          background-image: linear-gradient(to right, #f7a1a1 , #f7e9a1);
+        }
+        .box {
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          flex-direction: column;
+          border: 2px solid rgb(169, 169, 169, 0.3);
+          width: max-content;
+          padding: 20px;
+        }
+        
+        .Title {
+          width: 150px;
+          text-align: center;
+          margin: 0 0 15px 0;
+          color: #bc360a;
+          font-weight: bold;
+        }
+        
+        .image {
+          overflow: hidden;
+          width: 200px;
+          height: 200px;
+          border-radius: 10px;
+          -webkit-border-radius: 10px;
+          -moz-border-radius: 10px;
+          -ms-border-radius: 10px;
+          -o-border-radius: 10px;
+        }
+        
+        .image img {
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+          border: 7px solid #555;
+        }
+        
+        .shopping_cart {
+          margin: 50px;
+          background: #f8f7ed;
+          display: flex;
+          justify-content: center;
+          flex-direction: column;
+          padding: 20px;
+          height: max-content;
+        }
+        .cart-title {
+          font-style: italic;
+          font-size: 1.4rem;
+          margin: 10px 0;
+        }
+        
+        
+        input {
+          font-family: Inter, sans-serif;
+          font-weight: 500;
+          font-size: 1rem;
+          margin: 10px;
+          color: rgb(90, 90, 90);
+          padding: 8px 10px;
+          border: 1px solid rgba(128, 128, 128, 0.5);
+          border-radius: 5px;
+          -webkit-border-radius: 5px;
+          -moz-border-radius: 5px;
+          -ms-border-radius: 5px;
+          -o-border-radius: 5px;
+        }
+        
+        span {
+          text-shadow:
+            -1px -1px #FFF,
+            -2px -2px #FFF,
+            -1px 1px #FFF,
+            -2px 2px #FFF,
+            1px 1px #FFF,
+            2px 2px #FFF,
+            1px -1px #FFF,
+            2px -2px #FFF,
+            -3px -3px 2px #BBB,
+            -3px 3px 2px #BBB,
+            3px 3px 2px #BBB,
+            3px -3px 2px #BBB;
+          color: rgb(241, 104, 69);
+          transition: all 1s;
+        }
+        .button {
+          background-color: #a0af4c; /* Green */
+          border: none;
+          color: white;
+          padding: 8px 16px;
+          text-align: center;
+          text-decoration: none;
+          display: inline-block;
+          font-size: 16px;
+          margin: 4px 2px;
+          -webkit-transition-duration: 0.4s; /* Safari */
+          transition-duration: 0.4s;
+          cursor: pointer;
+          margin: 5px;
+      }
+      
+      .button1 {
+          background-color: white; 
+          color: black; 
+          border: 2px solid #ebe72e;
+      }
+      
+      .button1:hover {
+          background-color: #e7b52c;
+          box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
+          color: white;
+      } 
+      table {
+        border: 4px double #333; /* Рамка вокруг таблицы */ 
+        border-collapse: separate; /* Способ отображения границы */ 
+        width: 75%; /* Ширина таблицы */ 
+        border-spacing: 7px 11px; /* Расстояние между ячейками */ 
+       }
+       td {
+        padding: 5px; /* Поля вокруг текста */ 
+        border: 1px solid #a52a2a; /* Граница вокруг ячеек */ 
+       }
+       .flex-container {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+      }
+      
+      .flex-container > div {
+        background-color: transparent;
+        width: 500px;
+        margin: 10px;
+        text-align: center;
+        line-height: 75px;
+        font-size: 30px;
+      }
+      div > * {
+        vertical-align:middle;
+    }

@@ -1,0 +1,197 @@
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #000;
+  background-color: #dadada;
+  font-family: 'Maitree', serif;
+}
+
+table {
+  border-spacing: 0.5rem;
+}
+td, th {
+  border: 1px solid #999;
+  padding: 0.5rem;
+  text-align: center; 
+}
+
+td:nth-child(1) { background: hsl(150, 50%, 50%); }
+td:nth-child(2) { background: hsl(160, 60%, 50%); }
+td:nth-child(3) { background: hsl(170, 70%, 50%); }
+td:nth-child(4) { background: hsl(180, 80%, 50%); }
+td:nth-child(5) { background: hsl(190, 90%, 50%); }
+td:nth-child(6) { background: hsl(200, 99%, 50%); }
+td:nth-child(7) { background: hsl(150, 50%, 50%); }
+td:nth-child(8) { background: hsl(160, 60%, 50%); }
+td:nth-child(9) { background: hsl(170, 70%, 50%); }
+td:nth-child(10) { background: hsl(180, 80%, 50%); }
+td:nth-child(11) { background: hsl(190, 90%, 50%); }
+td:nth-child(12) { background: hsl(200, 99%, 50%); }
+
+.button {
+    background-color: #4CAF50; /* Green */
+    border: none;
+    color: white;
+    padding: 16px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.4s;
+    cursor: pointer;
+}
+
+.button1 {
+    background-color: white; 
+    color: black; 
+    border: 2px solid #4CAF50;
+}
+
+.button1:hover {
+    background-color: #4CAF50;
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
+    color: white;
+}
+
+span {
+  text-shadow:
+    -1px -1px #FFF,
+    -2px -2px #FFF,
+    -1px 1px #FFF,
+    -2px 2px #FFF,
+    1px 1px #FFF,
+    2px 2px #FFF,
+    1px -1px #FFF,
+    2px -2px #FFF,
+    -3px -3px 2px #BBB,
+    -3px 3px 2px #BBB,
+    3px 3px 2px #BBB,
+    3px -3px 2px #BBB;
+  color: steelblue;
+  transition: all 1s;
+}
+
+.list {
+  height: 40px;
+  background: transparent;
+  border: 2px solid whitesmoke;
+  margin: 0 10px;
+  padding: 5px 10px;
+  font-size: 1.3rem;
+  font-family: Rubik, sans-serif;
+  outline: none;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+  transition: 500ms cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  -webkit-transition: 500ms cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  -moz-transition: 500ms cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  -ms-transition: 500ms cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  -o-transition: 500ms cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+input[type=text] {
+  width: 130px;
+  box-sizing: border-box;
+  border: 2px solid #ccc;
+  border-radius: 14px;
+  font-size: 16px;
+  border-radius: 5px;
+  background-image: url('search.png');
+  background-position: 10px 10px; 
+  background-repeat: no-repeat;
+  padding: 12px 20px 12px 40px;
+  transition: width 0.4s ease-in-out;
+  background-color: #3CBC8D;
+  color: white;
+}
+
+input[type=text]:focus {
+  width: 100%;
+}
+
+.container {
+  position: relative;
+  text-align: center;
+}
+
+.centered {
+  position: absolute;
+  bottom: 150px;
+  left: 25%;
+  transform: translate(-50%, -50%);
+}
+
+.gradient-button {
+  padding: 5px;
+  text-decoration: none;
+  display: inline-block;
+  color: white;
+  border-radius: 5px;
+  font-family: 'Montserrat', sans-serif;
+  background-image: linear-gradient(to right, #9EEFE1 0%, #4830F0 51%, #9EEFE1 100%);
+  background-size: 200% auto;
+  box-shadow: 0 0 20px rgba(0, 0, 0, .1);
+  transition: .5s;
+  opacity: 0;
+}
+
+.gradient-button:hover {
+  background-position: right center;
+  cursor: pointer;
+}
+
+ h1 {
+  text-shadow:
+    -1px -1px #FFF,
+    -2px -2px #FFF,
+    -1px 1px #FFF,
+    -2px 2px #FFF,
+    1px 1px #FFF,
+    2px 2px #FFF,
+    1px -1px #FFF,
+    2px -2px #FFF,
+    -3px -3px 2px #BBB,
+    -3px 3px 2px #BBB,
+    3px 3px 2px #BBB,
+    3px -3px 2px #BBB;
+  color: steelblue;
+  transition: all 1s;
+}
+
+.none{
+  opacity: 0;
+}
+
+.Box {
+  margin-bottom:15px;
+    width:668px;
+    height: 175px;
+    position:relative;
+    border: 2px solid #D4D4D4;
+    border-radius: 50px;
+    box-shadow: 0 0 25px #916930;
+    padding:20px 40px;
+    background-color: #92887a;
+}
+
+input[type=number] {
+  width: 100%;
+  padding: 12px;
+  border: 4px solid #ccc;
+  border-radius: 50px;
+  resize: vertical;
+  outline: none;
+  color: #964700;
+}
+
+label {
+  padding: 12px 12px 12px 0;
+  display: inline-block;
+  text-shadow: 2px 2px 8px #FF0000;
+}

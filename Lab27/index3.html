@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html >
+<head>
+  <meta charset="UTF-8">
+  <title>Questions</title>
+
+      <link rel="stylesheet" href="css/style.css">
+	  
+</head>
+
+<body style="overflow: auto;">
+	<div id="questions" style="width: 50%;">
+		<ol class="bullet">
+			<li class="element">
+				<span id="q1">JavaScript это тоже самое что и Java?</span>
+				<div style="margin-top: 25px; margin-left: 25px;">
+					<label class="container">Да
+						<input type="radio" name="radio1"  value="1">
+						<span class="checkmark"></span>
+					</label>
+					<label class="container">Нет
+						<input type="radio" name="radio1"  value="2">
+						<span class="checkmark"></span>
+					</label>
+					<label class="container">Когда как
+						<input type="radio" name="radio1"  value="3">
+						<span class="checkmark"></span>
+					</label>
+					<label class="container">Иногда
+						<input type="radio" name="radio1"  value="4">
+						<span class="checkmark"></span>
+					</label>
+					<label class="container">Не знаю
+						<input type="radio" name="radio1"  value="5">
+						<span class="checkmark"></span>
+					</label>
+				</div>
+			</li>
+			<li class="element">
+				<span id="q2">Cколько параметров можно передавать в функцию?</span>
+				<div style="margin-top: 25px; margin-left: 25px;">
+					<label class="container">Только столько, сколько указано при её создании
+						<input type="radio" name="radio2" value="1">
+						<span class="checkmark"></span>
+					</label>
+					<label class="container">Минимум 1
+						<input type="radio" name="radio2" value="2">
+						<span class="checkmark"></span>
+					</label>
+					<label class="container">Сколько угодно
+						<input type="radio" name="radio2" value="3">
+						<span class="checkmark"></span>
+					</label>
+					<label class="container">Ни одного
+						<input type="radio" name="radio2" value="4">
+						<span class="checkmark"></span>
+					</label>
+					<label class="container">Минимум 5
+						<input type="radio" name="radio2" value="5">
+						<span class="checkmark"></span>
+					</label>
+				</div>
+			</li>
+			<li class="element">
+				<span id="q3">Что такое "use strict"?</span>
+				<div style="margin-top: 25px; margin-left: 25px;">
+					<label class="container">Просто строка
+						<input type="radio" name="radio3" value="1">
+						<span class="checkmark"></span>
+					</label>
+					<label class="container">Функция
+						<input type="radio" name="radio3" value="2">
+						<span class="checkmark"></span>
+					</label>
+					<label class="container">Строгий режим
+						<input type="radio" name="radio3" value="3">
+						<span class="checkmark"></span>
+					</label>
+					<label class="container">Комментарий
+						<input type="radio" name="radio3" value="4">
+						<span class="checkmark"></span>
+					</label>
+					<label class="container">Не знаю
+						<input type="radio" name="radio3" value="5">
+						<span class="checkmark"></span>
+					</label>
+				</div>
+			</li>
+		</ol>
+	</div>
+	<button id="send" class="btn-grad" style="margin-top: 25px;">Send for verification</button>
+	<div>
+		<h1 style="margin: 25px;" id="resultText"></h1>
+	</div>
+</body>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script src="ScriptJS3.js"></script>
+</html>

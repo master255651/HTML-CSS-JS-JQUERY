@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Starenco_Lab16</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="https://kit.fontawesome.com/c4aa7d1302.js" crossorigin="anonymous"></script>
+    <link rel="shortcut icon" href="https://drive.google.com/uc?export=view&id=1A1jWf31JjX6S1moAlsbi13qe7Cu-Qs0t" type="image/x-icon">
+</head>
+<body>
+    <div class="one"><h1>Третьй номер</h1></div>
+    <div class="container">
+  <form>
+
+    <span class="error">Введите ваше имя</span>
+    <span class="error">Пароль должен содержать от 4 до 8 символов</span>
+    <span class="error">Пароли не совпадалют</span>
+    <span class="error">Вы ввели некорректный e-mail</span>
+    <span class="error">Введите информацию о себе</span>
+
+  <fieldset class="col-75">
+  <legend>Проверка формы</legend>
+  <div class="row">
+    <div class="col-20">
+        <i class="fas fa-globe-africa"></i>
+      <label for="login">Логин</label> 
+    </div>
+    <div class="col-40">
+      <input type="text" id="login" name="login" placeholder="Введите логин..." required>
+    </div>
+  </div>
+
+   <div class="row">
+    <div class="col-20">
+        <i class="fas fa-globe-africa"></i>
+      <label for="password1">Пароль</label> 
+    </div>
+    <div class="col-40">
+      <input type="password" id="password1" name="password1" placeholder="Введите пароль..." required minlength="4" maxlength="8">
+    </div>
+  </div>
+
+   <div class="row">
+    <div class="col-20">
+        <i class="fas fa-globe-africa"></i>
+      <label for="password2">Подтвердите пароль</label> 
+    </div>
+    <div class="col-40">
+      <input type="password" id="password2" name="password2" placeholder="Подтвердите пароль..." required>
+    </div>
+  </div>
+
+    <div class="row">
+    <div class="col-20">
+        <i class="fas fa-globe-africa"></i>
+      <label for="email">Электронный адресс</label> 
+    </div>
+    <div class="col-40">
+      <input type="text" id="email" name="email" placeholder="Введите email..." required pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$">
+    </div>
+  </div>
+
+ 
+  <div class="row">
+    <div class="col-20">
+      <label for="showEmail">Показывать Email:</label>
+    </div>
+    <div class="col-40">
+      <select id="showEmail" name="showEmail">
+        <option value="moldova">Да</option>
+        <option value="russia">Нет</option>
+      </select>
+    </div>
+  </div>
+
+   <div class="row">
+    <div class="col-20">
+        <i class="fas fa-globe-africa"></i>
+      <label for="telefone">Телефон:</label> 
+    </div>
+    <div class="col-40">
+      <input type="text" id="telefone" name="telefone" placeholder="Введите номер телефонa...">
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col-20">
+      <label for="comments">О себе:</label>
+    </div>
+    <div class="col-40">
+      <textarea id="comments" name="comments" placeholder="Введите дополнительную информацию..." required style="height:150px"></textarea>
+    </div>
+  </div>
+
+
+   <div class="row">
+    <div class="col-20">
+        <i class="fas fa-globe-africa"></i>
+      <label for="password2">Получать рассылку:</label> 
+    </div>
+    <div class="col-40">
+      <input type="checkbox" class="getMessage">
+    </div>
+  </div>
+
+  </fieldset>
+
+  <div class="row">
+    <input type="submit" id="send" value="Отправить">
+    <input type="reset" value="Очистить">
+    </div>
+
+  </form>
+</div>
+</body>
+<script src="Script.js"></script>
+</html>

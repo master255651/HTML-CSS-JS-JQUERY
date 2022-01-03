@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Starenco_Lab17_Ex2</title>
+    <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+    <div class="one"><h1>Order type:</h1></div>
+    <div style="text-align: center; margin: 15px;">
+      <form id="delivery_type">
+        <label for="delivery" style="font-size: 2rem;">
+          <input type="radio" name="delivery_type" id="delivery" /><span>Delivery</span>
+        </label>
+  
+        <label for="on-place" style="font-size: 2rem;">
+          <input type="radio" name="delivery_type" id="restaurant" checked/><span>In restaurant</span>
+        </label>
+      </form>
+    </div>
+    <div>
+      <table>
+        <tr>
+            <td>
+              <div class="image" style="width: 500px; height: 300px;"><img src="Images/Pizza.jpg" alt="" /></div>
+            </td>
+            <td style="vertical-align: top;">
+              <div style="margin: 15px;">
+                <div>
+                  <label class="Title" style="font-size: 1.4em;"><b>Mario</b></label>
+                </div>
+                <div style="width: 300px; margin-top: 20px;">
+                  <label style="font-size: 1.1em;">
+                    Задача организации, в особенности же курс на социально-ориентированный национальный проект в значительной степени обуславливает создание системы масштабного изменения ряда параметров?
+                  </label>
+                </div>
+              </div>
+            </td>
+            <td style="vertical-align: top;">
+              <div style="margin: 15px;">
+                <span style="font-size: 1.4em;">Количество:</span>
+                <div style="margin-top: 35px;">
+                  <button class="button button1" id="decrease">-</button>
+                  <span style="font-size: 1.8em;" id="count">1</span>
+                  <button class="button button1" id="increase">+</button>
+                </div>
+              </div>
+            </td>
+            <td style="vertical-align: top;">
+              <div style="margin: 15px;">
+                <span style="font-size: 1.4em;">Цена:</span><br>
+                <div style="margin-top: 35px;">
+                  <span style="font-size: 1.4em;" id="price">75 MDL</span>
+                </div>
+              </div>
+            </td>
+            <td style="vertical-align: top;">
+              <div style="margin: 15px;">
+                <span style="font-size: 1.4em;">Всего:</span><br>
+                <div style="margin-top: 35px;">
+                  <span style="font-size: 1.4em;">75 MDL</span>
+                </div>
+              </div>
+            </td>
+        </tr>
+    </table>
+    </div>
+    <div style="display: flex; justify-content: flex-end;">
+      <div>
+        <table>
+          <tr>
+            <td style="border: 0px;"><span>Промежуточный итог: </span></td>
+            <td style="border: 0px;"><span  id="subtotal_price">75 MDL</span></td>
+          </tr>
+          <tr>
+            <td style="border: 0px;"><span>Доставка:</span></td>
+            <td style="border: 0px;"><span id="delivery_price">0 MDL</span></td>
+          </tr>
+          <tr>
+            <td style="border: 0px;"><span><b>Всего:</b></span></td>
+            <td style="border: 0px;"><span id="total_price"><b>75 MDL</b></span></td>
+          </tr>
+    </div>
+</body>
+<script src="ScriptJS2.js"></script>
+</html>

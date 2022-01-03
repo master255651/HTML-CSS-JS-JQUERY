@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Lab19</title>
+	<link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+  <table>
+    <tr>
+        <td>
+          <div>
+            <img src="Images/Clothes.jpg" id="img1" style="width:300px; height: 200px;" onmouseover="FaintPicture(this, document.getElementById('h1'),
+             document.getElementById('additional1'))" onmouseleave="NormalPicture(this, document.getElementById('h1'), document.getElementById('additional1'))">
+            <div class="container">
+              <div class="centered">
+                <h1 class="none" id="h1" onmouseover="FaintPicture(document.getElementById('img1'), document.getElementById('h1'),
+                document.getElementById('additional1'))">Одежда</h1>
+                <a id="additional1" href="https://en.wikipedia.org/wiki/Clothing" class="gradient-button" onmouseover="FaintPicture(document.getElementById('img1'), document.getElementById('h1'),
+                document.getElementById('additional1'))">Подробнее</a>
+              </div>
+            </div>
+          </div>
+        </td>
+        <td>
+          <div>
+            <img src="Images/Shoes.jpg" id="img2" style="width:300px; height: 200px;" onmouseover="FaintPicture(this, document.getElementById('h2'),
+             document.getElementById('additional2'))" onmouseleave="NormalPicture(this, document.getElementById('h2'), document.getElementById('additional2'))">
+            <div class="container">
+              <div class="centered">
+                <h1 class="none" id="h2" onmouseover="FaintPicture(document.getElementById('img2'), document.getElementById('h2'),
+                document.getElementById('additional2'))">Обувь</h1>
+                <a id="additional2" href="https://en.wikipedia.org/wiki/Footwear" class="gradient-button" onmouseover="FaintPicture(document.getElementById('img2'), document.getElementById('h2'),
+                document.getElementById('additional2'))">Подробнее</a>
+              </div>
+            </div>
+          </div>
+    </tr>
+    <tr>
+        <td>
+          <div>
+            <img src="Images/Backpack.jpg" id="img3" style="width:300px; height: 200px;" onmouseover="FaintPicture(this, document.getElementById('h3'),
+             document.getElementById('additional3'))" onmouseleave="NormalPicture(this, document.getElementById('h3'), document.getElementById('additional3'))">
+            <div class="container">
+              <div class="centered">
+                <h1 class="none" id="h3" onmouseover="FaintPicture(document.getElementById('img3'), document.getElementById('h3'),
+                document.getElementById('additional3'))">Портфели</h1>
+                <a id="additional3" href="https://en.wikipedia.org/wiki/Briefcase" class="gradient-button" onmouseover="FaintPicture(document.getElementById('img3'), document.getElementById('h3'),
+                document.getElementById('additional3'))">Подробнее</a>
+              </div>
+            </div>
+          </div>
+        </td>
+        <td>
+          <div>
+            <img src="Images/Accessories.jpg" id="img4" style="width:300px; height: 200px;" onmouseover="FaintPicture(this, document.getElementById('h4'),
+             document.getElementById('additional4'))" onmouseleave="NormalPicture(this, document.getElementById('h4'), document.getElementById('additional4'))">
+            <div class="container">
+              <div class="centered">
+                <h1 class="none" id="h4" onmouseover="FaintPicture(document.getElementById('img4'), document.getElementById('h4'),
+                document.getElementById('additional4'))">Аксессуары</h1>
+                <a id="additional4" href="https://en.wikipedia.org/wiki/Accessory" class="gradient-button" onmouseover="FaintPicture(document.getElementById('img4'), document.getElementById('h4'),
+                document.getElementById('additional4'))">Подробнее</a>
+              </div>
+            </div>
+          </div>
+        </td>
+    </tr>
+</table>
+</body>
+<script src="ScriptJS.js"></script>
+</html>

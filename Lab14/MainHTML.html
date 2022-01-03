@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Starenco_Lab14</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+    <div style="margin: 75px;">
+        <div id="firstTask">
+            <h1><span>Первое задание</span></h1>
+
+            <label for="number">
+                <span>Введите число: </span>
+                <input id="number" name="number" type="text" required/>
+            </label>
+
+            <button onclick="Square()" class="button button1">Посчитать квадрат числа</button>
+        </div>
+
+        <div id="secondTask">
+            <h1><span>Второе задание</span></h1>
+
+            <label for="text1">
+                <span>Первое значение: </span>
+                <input id="text1" name="text1" type="text" required/>
+            </label>
+
+            <label for="text2">
+                <span>Второе значение: </span>
+                <input id="text2" name="text2" type="text" required />
+            </label>
+
+            <button onclick="SwapFields()" class="button button1">Заменить значения местами</button>
+        </div>
+
+        <div id="thirdTask">
+            <h1><span>Третье задание</span></h1>
+
+            <button id="countClick" class="button button1">Количество нажатий: 0</button>
+        </div>
+
+        <div id="fourthTask">
+            <h1><span>Четвертое задание</span></h1>
+
+            <div id="images" style="width: 513px;">
+                <img style="height: 450px;" id="firstImage" src="firstImage.png" alt="" />
+                <img style="height: 450px;" id="secondImage" src="secondImage.png" alt="" />
+            </div>
+        </div>
+
+        <div id="fifthTask">
+            <h1><span>Пятое задание</span></h1>
+
+             <select name="numberSelection" id="numberSelection" class="list">
+                <option value="none" selected></option>
+                <option value="first">Один</option>
+                <option value="second">Два</option>
+                <option value="third">Три</option>
+                <option value="fourth">Четыре</option>
+                <option value="fifth">Пять</option>
+            </select>
+
+            <label for="numberOfText">
+                <span>Введите число: </span>
+                <input id="numberOfText" name="numberOfText" type="text" />
+            </label>
+
+            <button class="button button1" onclick="SelectNumberFromList()">Перевести текст</button>
+        </div>
+
+        <div id="sixthTask">
+            <h1><span>Шестое задание</span></h1>
+
+            <table id="table">
+                <tr>
+                  <th>First Name</th>
+                  <th>Last Name</th>
+                </tr>
+                <tr>
+                  <td>Iurie</td>
+                  <td>Starenco</td>
+                </tr>
+                <tr>
+                  <td>Daria</td>
+                  <td>Stanilevici</td>
+                </tr>
+                <tr>
+                  <td>Igor</td>
+                  <td>Russov</td>
+                </tr>
+                <tr>
+                  <td>Gleb</td>
+                  <td>Popsoi</td>
+                </tr>
+          </table>
+
+          <div>
+             <label for="firstName">
+                <span>Введите имя: </span>
+                <input id="firstName" name="firstName" type="text" />
+            </label>
+
+            <label for="lastName">
+                <span>Введите фамилию: </span>
+                <input id="lastName" name="lastName" type="text" />
+            </label>
+
+          </div>
+          <button class="button button1" onclick="AddNewPerson()">Добавить нового человека</button>
+        </div>
+
+        <div id="seventhTask">
+            <h1><span>Седьмое задание</span></h1>
+
+            <label for="countrySelection">
+                <span>Выберите страну: </span>
+                <select name="countrySelection" id="countrySelection" class="list">
+                    <option value="none" selected>Выберите страну</option>
+                    <option value="Moldova">Молдова</option>
+                    <option value="Ukraine">Украина</option>
+                    <option value="Russia">Россия</option>
+                </select>
+            </label>
+            <br>
+            <label for="citiesSelection">
+                <span>Города: </span>
+               <select name="cities" id="cities" class="list"></select>
+            </label>
+        </div>
+    </div>
+</body>
+<script src="ScriptJS.js"></script>
+</html>

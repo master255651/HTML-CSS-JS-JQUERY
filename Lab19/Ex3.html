@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Lab19</title>
+	<link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+  <div class="board">
+    <div class="one"><h1>Your choice</h1></div>
+    <div class="data">
+      <div class="items">
+        <div class="item">
+          <label for="pepsi">
+            <input type="radio" name="drinks" value="pepsi" id="pepsi" />
+            <div class="image-block">
+              <img src="Images/pepsi.jpg" alt="" />
+            </div>
+          </label>
+        </div>
+        <div class="item">
+          <label for="cola">
+            <input type="radio" name="drinks" value="cola" id="cola" />
+            <div class="image-block">
+              <img src="Images/cola.jpg" alt="" />
+            </div>
+          </label>
+        </div>
+        <div class="item">
+          <label for="fanta">
+            <input type="radio" name="drinks" value="fanta" id="fanta" />
+            <div class="image-block">
+              <img src="Images/fanta.jpg" alt="" />
+            </div>
+          </label>
+        </div>
+        <div class="item">
+          <label for="sprite">
+            <input type="radio" name="drinks" value="sprite" id="sprite" />
+            <div class="image-block">
+              <img src="Images/sprite.png" alt="" />
+            </div>
+          </label>
+        </div>
+      </div>
+      <div class="result-board">
+        <div id="pepsi-progress" class="progress-bar">
+          <div class="bar"></div>
+          <div class="percentage">0%</div>
+        </div>
+        <div id="cola-progress" class="progress-bar">
+          <div class="bar"></div>
+          <div class="percentage">0%</div>
+        </div>
+        <div id="fanta-progress" class="progress-bar">
+          <div class="bar"></div>
+          <div class="percentage">0%</div>
+        </div>
+        <div id="sprite-progress" class="progress-bar">
+          <div class="bar"></div>
+          <div class="percentage">0%</div>
+        </div>
+      </div>
+    </div>
+    <button id="vote-button" class="button button1" onclick="CalculateVotes()">Vote</button>
+  </div>
+</body>
+<script src="ScriptJS.js"></script>
+</html>

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html >
+<head>
+  <meta charset="UTF-8">
+  <title>Tic tac toe</title>
+
+      <link rel="stylesheet" href="css/style.css">
+	  
+</head>
+
+<body>
+  <div class="containerDiv">
+	<table id="table">
+		<tbody>
+			<tr>
+				<td id="1"></td>
+				<td id="2"></td>
+				<td id="3"></td>
+			</tr>
+			<tr>
+				<td id="4"></td>
+				<td id="5"></td>
+				<td id="6"></td>
+			</tr>
+			<tr>
+				<td id="7"></td>
+				<td id="8"></td>
+				<td id="9"></td>
+			</tr>
+		</tbody>
+	</table>
+	<button id="reset" class="btn-grad" style="margin-top: 25px;">Reset Game</button>
+	
+	<div class="scoreDiv">
+		<div>
+			<span id="info">Ход игрока под знаком: </span><span id="TurnChar">O</span><br>
+		</div>
+		<br>
+
+		<div>
+			<span>X won: </span><span id="X" style="color: red;">0</span><span> times</span><br>
+		</div>
+
+		<br>
+		<div>
+			<span>O won: </span><span id="O" style="color: blue;">0</span><span> times</span><br>
+		</div>
+
+		<br>
+		<div>
+			<span>Draw : </span><span id="draw" style="color: goldenrod;">0</span><span> times</span><br>
+		</div>
+	</div>
+</div>
+
+</body>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script src="ScriptJS.js"></script>
+</html>
